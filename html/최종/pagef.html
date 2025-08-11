@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -57,29 +58,35 @@
       }
     }
 
-    .merged-text, .final-text {
-  position: absolute;
-  left: 50%;
-  font-weight: bold;
-  color: black;
-  opacity: 0;
-  z-index: 2;
-  transform: translate(-50%, -50%);
-}
+    .merged-text,
+    .final-text {
+      position: absolute;
+      left: 50%;
+      font-weight: bold;
+      color: black;
+      opacity: 0;
+      z-index: 2;
+      transform: translate(-50%, -50%);
+    }
 
-.merged-text {
-  font-size: 12vw;        /* ✅ 글자 크기 증가 */
-  top: 50%;               /* 기존과 동일 */
-  transition: all 2s ease-in-out;
-}
+    .merged-text {
+      font-size: 10vw;
+      /* ✅ 글자 크기 증가 //  기존 폰트 사이즈 12vw; */
+      top: 50%;
+      /* 기존과 동일 */
+      transition: all 2s ease-in-out;
+    }
 
-.final-text {
-  font-size: 13vw;        /* ✅ 더 크게 */
-  top: 50%;               /* ✅ 세로 정중앙 */
-  transition: opacity 2s ease-in-out;
-}
+    .final-text {
+      font-size: 13vw;
+      /* ✅ 더 크게 */
+      top: 50%;
+      /* ✅ 세로 정중앙 */
+      transition: opacity 2s ease-in-out;
+    }
   </style>
 </head>
+
 <body>
   <!-- BGM -->
   <audio src="bgm.mp3" autoplay loop></audio>
@@ -206,4 +213,5 @@
     }, totalTime + 3000);
   </script>
 </body>
+
 </html>

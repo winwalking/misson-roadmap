@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 
 // 페이지 컴포넌트들 import
-import Opening from './pages/Opening';
-import Jericho from './pages/Jericho';
-import RedSea from './pages/RedSea';
-import Decalogue from './pages/Decalogue';
+import Team from './pages/team/Team';
+import Place from './pages/place/Place';
+import Answer from './pages/answer/Answer';
+import Final from './pages/final/Final';
 
 function App() {
   return (
@@ -14,20 +14,20 @@ function App() {
       <div className="App">
         <nav className="navigation">
           <ul>
-            <li><Link to="/opening">Opening</Link></li>
-            <li><Link to="/jericho">Jericho</Link></li>
-            <li><Link to="/red-sea">Red Sea</Link></li>
-            <li><Link to="/decalogue">Decalogue</Link></li>
+            <li><Link to="/place">Place</Link></li>
+            <li><Link to="/team">Team</Link></li>
+            <li><Link to="/answer">Answer</Link></li>
+            <li><Link to="/final">Final</Link></li>
           </ul>
         </nav>
 
         <main className="main-content">
           <Routes>
-            <Route path="/opening" element={<Opening />} />
-            <Route path="/jericho" element={<Jericho />} />
-            <Route path="/red-sea" element={<RedSea />} />
-            <Route path="/decalogue" element={<Decalogue />} />
-            <Route path="/" element={<Opening />} />
+            <Route path="/place" element={<Place />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/answer" element={<Answer />} />
+            <Route path="/final" element={<Final />} />
+            <Route path="/" element={<Answer />} />
           </Routes>
         </main>
       </div>
