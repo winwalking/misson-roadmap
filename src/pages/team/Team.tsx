@@ -11,7 +11,7 @@ import React from 'react';
 const Team: React.FC = () => {
     return (
         <div className="team-page w-100 h-100">
-            <div className="container w-100 h-100">
+            <div className="container w-100 h-100" >
                 <h1>주님이 주신 땅으로</h1>
                 <h2>홍해</h2>
                 <p>조를 입력하세요</p>
