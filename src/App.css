@@ -111,7 +111,7 @@ body {
 }
 
 .container {
-  background-image: url('C:\Users\sjk25\OneDrive\Desktop\dev\jujuddang-fe\public\page.jpg');
+  background-image: url('../../jujuddang-fe/src/assets/background.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
