@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import Bgm from "../../assets/bgm.mp3"
 
 const Final: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -117,7 +118,7 @@ const Final: React.FC = () => {
 
   return (
     <div style={{ margin: 0, background: 'white', overflow: 'hidden', fontFamily: 'Cafe24Ohsquare, sans-serif' }}>
-      <audio src="bgm.mp3" autoPlay loop />
+      <audio src={Bgm} autoPlay loop />
       <canvas ref={canvasRef} style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', pointerEvents: 'none', zIndex: 0 }} />
 
       {!textHidden && (
